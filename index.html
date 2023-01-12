@@ -19,7 +19,8 @@
             </table>
         <p>
             <h2> BMI計算 </h2>
-            <div>
+            <img id="img" name="img" style="text-align: center">   
+            <div  style="float:left">
                 <form method="post" oninput="result.value=Math.round(parseFloat(num2.value) * parseFloat(num2.value) / parseFloat(num1.value) * 10) / 10;">
                     <table border="1" height="100"> 
                         <tr>
@@ -49,8 +50,7 @@
                         <tr height="100%">
                             <td style="text-align: center;"><p id="resultType"></p></td>
                         </tr>
-                    </table>      
-                    <img id="img" name="img">         
+                    </table>            
                     <script type="text/javascript">
                         function _resultScore(score){
                             if(score < 18.5){
